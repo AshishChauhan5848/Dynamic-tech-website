@@ -1,0 +1,44 @@
+{{#each ban}}
+<section class="banner2_section py-5">
+    <div class="container">
+        <h3 class="text-center text-secondary">Features Of Us</h3>
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    {{!-- left --}}
+                    <div class="col-md-6 text-center pt-4 ">
+                        <h3>
+                            {{this.Heading1}}
+                        </h3>
+                        <p>{{this.Paragraph1}}</p>
+                        <button class="btn btn-primary">Click Here</button>
+                    </div>
+                    {{!-- right --}}
+                    <div class="col-md-6 text-center">
+                        <img src={{this.imgUrl1}} style="height: 270px;" alt="">
+                    </div>
+                </div>
+            </div>
+</section>
+
+<section class="banner2_section py-5">
+
+    <div class="container">
+        <div class="row">
+            {{!-- left --}}
+            <div class="col-md-6 text-center">
+                <img src={{this.imgUrl2}} style="height: 270px;" alt="">
+            </div>
+            {{!-- right --}}
+            <div class="col-md-6 text-center pt-4">
+
+                <h3>
+                    {{this.Heading2}}
+                </h3>
+                <p>{{this.Paragraph2}}</p>
+                <button class="btn btn-primary">Click Here</button>
+            </div>
+        </div>
+    </div>
+</section>
+{{/each}}
